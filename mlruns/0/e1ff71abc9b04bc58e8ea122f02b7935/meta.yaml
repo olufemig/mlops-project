@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/e1ff71abc9b04bc58e8ea122f02b7935/artifacts
+end_time: 1751812665030
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e1ff71abc9b04bc58e8ea122f02b7935
+run_name: fortunate-chimp-471
+run_uuid: e1ff71abc9b04bc58e8ea122f02b7935
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751812656093
+status: 3
+tags: []
+user_id: Admin

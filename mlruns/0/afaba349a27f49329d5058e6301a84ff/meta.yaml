@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/afaba349a27f49329d5058e6301a84ff/artifacts
+end_time: 1751822831646
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: afaba349a27f49329d5058e6301a84ff
+run_name: auspicious-moth-254
+run_uuid: afaba349a27f49329d5058e6301a84ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751822822994
+status: 3
+tags: []
+user_id: Admin

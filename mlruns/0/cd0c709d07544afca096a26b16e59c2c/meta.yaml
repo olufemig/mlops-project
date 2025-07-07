@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/cd0c709d07544afca096a26b16e59c2c/artifacts
+end_time: 1751825874060
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cd0c709d07544afca096a26b16e59c2c
+run_name: skillful-carp-212
+run_uuid: cd0c709d07544afca096a26b16e59c2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751825869087
+status: 3
+tags: []
+user_id: Admin

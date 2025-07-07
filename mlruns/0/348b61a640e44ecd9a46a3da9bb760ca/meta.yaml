@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/348b61a640e44ecd9a46a3da9bb760ca/artifacts
+end_time: 1751816584273
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 348b61a640e44ecd9a46a3da9bb760ca
+run_name: tasteful-bat-622
+run_uuid: 348b61a640e44ecd9a46a3da9bb760ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751816576622
+status: 3
+tags: []
+user_id: Admin

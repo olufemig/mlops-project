@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/388999e7abda4000bdbf44c92ac32ca2/artifacts
+end_time: 1751825995804
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 388999e7abda4000bdbf44c92ac32ca2
+run_name: sneaky-rook-663
+run_uuid: 388999e7abda4000bdbf44c92ac32ca2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751825986670
+status: 3
+tags: []
+user_id: Admin

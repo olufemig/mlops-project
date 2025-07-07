@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/986eb1acfc6e456d9297290841c233a9/artifacts
+end_time: 1751816594700
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 986eb1acfc6e456d9297290841c233a9
+run_name: tasteful-seal-959
+run_uuid: 986eb1acfc6e456d9297290841c233a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751816584349
+status: 3
+tags: []
+user_id: Admin

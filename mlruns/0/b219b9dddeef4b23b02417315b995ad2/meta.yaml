@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/b219b9dddeef4b23b02417315b995ad2/artifacts
+end_time: 1751822822944
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b219b9dddeef4b23b02417315b995ad2
+run_name: upset-jay-380
+run_uuid: b219b9dddeef4b23b02417315b995ad2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751822819383
+status: 3
+tags: []
+user_id: Admin

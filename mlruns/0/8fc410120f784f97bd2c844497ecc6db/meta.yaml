@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/8fc410120f784f97bd2c844497ecc6db/artifacts
+end_time: 1751814215583
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8fc410120f784f97bd2c844497ecc6db
+run_name: gentle-shrimp-329
+run_uuid: 8fc410120f784f97bd2c844497ecc6db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751814215037
+status: 3
+tags: []
+user_id: Admin

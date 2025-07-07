@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ca0f5c197da44c21bc81378d9e5a80e3/artifacts
+end_time: 1751817702844
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ca0f5c197da44c21bc81378d9e5a80e3
+run_name: beautiful-gnu-892
+run_uuid: ca0f5c197da44c21bc81378d9e5a80e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751817693094
+status: 3
+tags: []
+user_id: Admin

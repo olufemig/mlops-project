@@ -4,3 +4,5 @@
 # Ignore folders
 aliases/
 collections/
+.pytest_cache/
+

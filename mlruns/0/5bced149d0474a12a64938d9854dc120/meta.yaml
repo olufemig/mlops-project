@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/5bced149d0474a12a64938d9854dc120/artifacts
+end_time: 1751812656076
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5bced149d0474a12a64938d9854dc120
+run_name: gentle-moose-613
+run_uuid: 5bced149d0474a12a64938d9854dc120
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751812656009
+status: 4
+tags: []
+user_id: Admin

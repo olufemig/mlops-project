@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/7ff267bd308a4051811f56c303abbae6/artifacts
+end_time: 1751825869015
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7ff267bd308a4051811f56c303abbae6
+run_name: omniscient-ant-558
+run_uuid: 7ff267bd308a4051811f56c303abbae6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751825860945
+status: 3
+tags: []
+user_id: Admin

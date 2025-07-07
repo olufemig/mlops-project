@@ -1,0 +1,8 @@
+digest: 2ce258cb
+name: dataset
+profile: '{"num_rows": 298, "num_elements": 298}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "experience", "required":
+  true}]}'
+source: '{"tags": {"mlflow.user": "Admin", "mlflow.source.name": "run_pipeline.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "93506501361e7ff147a6e99dfd3fa64f2fd6aa4c"}}'
+source_type: code

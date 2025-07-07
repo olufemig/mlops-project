@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/b1caa822e722451a9fc337efed3a0a9e/artifacts
+end_time: 1751814215659
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b1caa822e722451a9fc337efed3a0a9e
+run_name: unruly-snipe-589
+run_uuid: b1caa822e722451a9fc337efed3a0a9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751814215596
+status: 4
+tags: []
+user_id: Admin

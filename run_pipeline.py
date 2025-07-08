@@ -1,5 +1,5 @@
 from pipelines.pipeline import training_pipeline
-from steps.load_data import split_data
+from steps.split_data import split_data
 from steps.reg_trainer import train_model
 from steps.extract_data import extract_data
 from steps.preprocess_data import preprocess_data

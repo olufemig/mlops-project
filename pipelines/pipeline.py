@@ -1,17 +1,21 @@
 from zenml import pipeline, Model
 from zenml.pipelines import pipeline
-from steps.load_data import load_data
-from steps.reg_trainer import reg_trainer
+from steps.load_data import split_data
+from steps.reg_trainer import train_model
 from steps.extract_data import extract_data
+from steps.preprocess_data import preprocess_data
 from steps.generate_synthetic_data import generate_salary_data
+from steps.evaluate_model import evaluate_model
 import logging
 from pathlib import Path
 
 @pipeline (enable_cache=False)
 
 def training_pipeline():
-        logging.info("starting pipeline...")
-        synthetic_data = generate_salary_data
-        X_train, X_test, y_train, y_test = load_data(synthetic_data)
-        model, rmse = reg_trainer(X_train, X_test, y_train, y_test)
+        logging.info("starting data pipeline...")
+        df = generate_salary_data()    
+        X_train, X_test, y_train, y_test = split_data(df)
+        X_train_prep, X_test_prep = preprocess_data(X_train, X_test)
+        model = train_model(X_train_prep, y_train)
+        evaluate_model(model, X_test_prep, y_test)
 

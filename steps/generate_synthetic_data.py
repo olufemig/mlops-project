@@ -4,8 +4,8 @@ import logging
 from faker import Faker
 from zenml import pipeline, step
 
-@step
-def generate_salary_data(n=1000):
+@step(enable_cache=False)
+def generate_salary_data(n=10)-> pd.DataFrame:
 
 
     fake = Faker()
@@ -18,7 +18,7 @@ def generate_salary_data(n=1000):
         education = random.choice(["Bachelors", "Masters", "PhD"])
         job = random.choice(["Data Scientist", "Software Engineer", "Analyst", "Account Executive"])
         industry = random.choice(["Tech", "Finance", "Healthcare", "Education"])
-        location = random.choice(["San Francisco", "Austin", "New York", "London"])
+        residence = random.choice(["San Francisco", "Austin", "New York", "London"])
         certs = random.randint(0, 5)
 
         # base salary
@@ -46,17 +46,20 @@ def generate_salary_data(n=1000):
             "London": 1.15
         }
 
-        salary = base * job_multipliers[job] * location_adjustment[location]
+        salary = base * job_multipliers[job] * location_adjustment[residence]
 
         data.append({
             "experience_years": experience,
             "education_level": education,
             "job_title": job,
             "industry": industry,
-            "location": location,
+            "residence": residence,
             "certifications": certs,
             "salary": round(salary, 2)
         })
+  
 
-        logging.info(" synthetic data generated...")
-    return pd.DataFrame(data)
+    df= pd.DataFrame(data)
+    return df
+    print(df.info())
+    logging.info(" synthetic data generated...")

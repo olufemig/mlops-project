@@ -1,10 +1,5 @@
-from typing import Dict, Tuple, Annotated
-import pandas as pd
-import numpy as np
-import logging
-from zenml import pipeline, step
+from zenml.client import Client
 
-
-
-df = pd.read_csv("./data/salary_dataset.csv")
-print ( df.head(5))
+tracker = Client().active_stack.experiment_tracker
+print("🧭 Experiment Tracker Name:", tracker.name)
+print("📍 Tracking URI:", tracker.get_tracking_uri())

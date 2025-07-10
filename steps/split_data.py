@@ -16,9 +16,7 @@ def split_data(df: pd.DataFrame) -> Tuple[
 
     X = df.drop(columns=["salary"])
     logging.info("print X Dataframe...")
-    print(X.info())
     y = df["salary"]
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    print(X_train.info())
     logging.info("split completed...")
     return X_train, X_test, y_train, y_test

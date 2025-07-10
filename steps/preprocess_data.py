@@ -33,18 +33,11 @@ def preprocess_data(
 
     logging.info(" transformer done...")
 
-    print("X_train")
-    print(X_train.info())
-    print("X_test")
-    print(X_test.info())
-
     X_train_transformed = ct.fit_transform(X_train)
     X_test_transformed = ct.transform(X_test)
 
     logging.info(" processing data complete...")
 
-    print("X_train_transformed")   
-    print(X_train_transformed.info()) 
 
     return X_train_transformed, X_test_transformed
 

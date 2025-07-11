@@ -6,3 +6,5 @@ aliases/
 collections/
 .pytest_cache/
 
+
+.early.coverage

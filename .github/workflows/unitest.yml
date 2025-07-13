@@ -31,7 +31,7 @@ jobs:
         run: |
           zenml integration install mlflow evidently --yes
           zenml integration install airflow --yes
-          zenml integration list #confirms integration
+
 
       - name: Run Ruff on pipelines and steps
         run: ruff check pipelines steps

@@ -4,7 +4,7 @@ import numpy as np
 from unittest.mock import patch
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from steps.reg_trainer import train_model  # Adjust this path to match your setup
 from sklearn.linear_model import LinearRegression
 

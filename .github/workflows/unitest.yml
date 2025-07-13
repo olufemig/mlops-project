@@ -34,4 +34,4 @@ jobs:
           RUFF_FORMAT: github
 
       - name: Run pytest on tests directory
-        run: pytest tests
+        run: PYTHONPATH=$(pwd) pytest tests

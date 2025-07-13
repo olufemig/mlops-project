@@ -3,7 +3,7 @@ import pandas as pd
 from unittest.mock import patch, MagicMock
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 from steps.detect_data_drift import detect_data_report
 

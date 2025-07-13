@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from unittest.mock import patch
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 from steps.evaluate_model import evaluate_model  # Adjust path as needed
 

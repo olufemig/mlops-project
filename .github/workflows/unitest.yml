@@ -1,4 +1,4 @@
-name: Lint and Test
+name: Project Testing and Linting
 
 on:
   push:
@@ -26,6 +26,13 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Set up ZenML
+        run: |
+          zenml init
+          zenml integration install mlflow evidently
+          zenml integration install airflow
+          zenml integration list #confirms integration
 
       - name: Run Ruff on pipelines and steps
         run: ruff check pipelines steps

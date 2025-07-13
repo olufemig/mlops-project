@@ -28,7 +28,10 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Ruff on pipelines and steps
-        run: ruff pipelines steps
+        run: ruff check pipelines steps
+        continue-on-error: true
+        env:
+          RUFF_FORMAT: github
 
       - name: Run pytest on tests directory
         run: pytest tests

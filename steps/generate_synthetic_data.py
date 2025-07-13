@@ -1,14 +1,14 @@
 import pandas as pd
 import random
 import logging
-from faker import Faker
-from zenml import pipeline, step
+#from faker import Faker
+from zenml import step
 
 @step(enable_cache=False)
 def generate_salary_data(n=500)-> pd.DataFrame:
 
 
-    fake = Faker()
+    #fake = Faker()
     data = []
 
     logging.info("generating synthetic data...")

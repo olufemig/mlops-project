@@ -2,7 +2,7 @@
 import bentoml
 from zenml import step
 from zenml.client import Client
-from mlflow.tracking import MlflowClient
+#from mlflow.tracking import MlflowClient
 from zenml.integrations.mlflow.flavors.mlflow_experiment_tracker_flavor import MLFlowExperimentTracker
 from typing import Optional
 
@@ -22,7 +22,7 @@ def deploy_bentoml_model(model_name: str, pipeline_name: str, step_name: str) ->
             raise ValueError("This step requires an MLflow experiment tracker in the active ZenML stack")
 
         experiment_tracker.configure_mlflow()
-        mlflow_client = MlflowClient()
+        #mlflow_client = MlflowClient()
 
         run_id = experiment_tracker.get_run_id(
             experiment_name=pipeline_name,

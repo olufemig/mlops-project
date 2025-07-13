@@ -1,4 +1,4 @@
-from zenml import pipeline, step
+from zenml import step
 from sklearn.model_selection import train_test_split
 from typing import Annotated, Tuple
 import pandas as pd

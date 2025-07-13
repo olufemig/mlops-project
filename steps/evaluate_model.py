@@ -1,5 +1,5 @@
-from zenml import pipeline, step
-from typing import Annotated, Tuple
+from zenml import step
+from typing import Annotated
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import pandas as pd

@@ -1,10 +1,8 @@
 import mlflow.sklearn
 from sklearn.linear_model import LinearRegression
-from typing import Dict, Tuple, Annotated
+from typing import Annotated
 import pandas as pd
-import numpy as np
-import logging
-from zenml import pipeline, step
+from zenml import step
 from zenml.client import Client
 
 

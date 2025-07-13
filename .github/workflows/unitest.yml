@@ -29,9 +29,8 @@ jobs:
 
       - name: Set up ZenML
         run: |
-          zenml init
-          zenml integration install mlflow evidently
-          zenml integration install airflow
+          zenml integration install mlflow evidently --yes
+          zenml integration install airflow --yes
           zenml integration list #confirms integration
 
       - name: Run Ruff on pipelines and steps

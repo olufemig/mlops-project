@@ -1,5 +1,5 @@
 from zenml import step
-from evidently import Report
+from evidently.report import Report
 from evidently.metric_preset import DataDriftPreset
 import mlflow
 from zenml.client import Client

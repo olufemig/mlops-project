@@ -4,6 +4,8 @@ from typing import Annotated
 import pandas as pd
 from zenml import step
 from zenml.client import Client
+import os
+import pickle
 
 
 experiment_tracker = Client().active_stack.experiment_tracker
@@ -16,6 +18,10 @@ def train_model(
     model = LinearRegression()
     model.fit(X_train, y_train)
     mlflow.sklearn.log_model(model, "sklearn_model")
+
+    os.makedirs("app", exist_ok=True)
+    with open("app/model.pkl", "wb") as f:
+        pickle.dump(model, f)
     return model
 
 

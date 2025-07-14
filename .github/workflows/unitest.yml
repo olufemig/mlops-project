@@ -50,8 +50,8 @@ jobs:
           git config --global user.name "olufemig"
 
           cd app
-          git init
-          git remote add origin https://huggingface.co/spaces/olufemig/salarypredictor
+          git init --initial-branch=main
+          git remote add origin https://olufemig:${DTCTOKEN}@huggingface.co/spaces/olufemig/salarypredictor
           git add model.pkl app.py requirements.txt  # Include your app files here
           git commit -m "Update model and app"
           git push --force origin main

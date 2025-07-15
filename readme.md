@@ -64,7 +64,7 @@ airflow webserver -p 8080
 airflow scheduler
 ```
 
-**Run GitHub Actions** :Ensure GitHub Actions workflows are configured in .github/workflows/ for CI/CD.
+**Run GitHub Actions** :GitHub Actions workflows are configured in .github/workflows/ for CI/CD. i have included code for installing python dependencies, unit testing, linting and uploading the model to hugging spaces for inference
 
 **Running the Project**
 

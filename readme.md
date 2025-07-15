@@ -4,7 +4,7 @@ Problem statement
 
 This project builds a machine learning pipeline to predict salaries based on variables such as number of certifications, residence, age, education, and job title. Each run uses auto-generated synthetic data. The pipeline handles data preprocessing, trains a linear regression model using scikit-learn, and evaluates model performance through key metrics. Development was done locally using VS Code, with all data and model artifacts logged and versioned via GitHub.
 
-#### Cloud assets used
+#### Cloud assets used ( all local stack) 
 
 **Pipelines**: ZenML pipelines for data preprocessing, model training, and evaluation.  
 **Monitoring**: Evidently AI dashboards for data drift and model performance monitoring.  
@@ -16,13 +16,13 @@ This project builds a machine learning pipeline to predict salaries based on var
 
 #### Experiment tracking and model register
 
-I use MLflow as both an experiment tracker and a model registry to streamline my machine learning workflow. During experimentation, I log key parameters, metrics, artifacts, and model versions using MLflow Tracking, which helps me compare different runs and identify the most effective models. Once a model meets the desired performance criteria, I register it in the MLflow Model Registry, where I can manage model stages such as staging, production, and archived. This setup provides a structured, auditable process for tracking model lifecycle events, promoting reproducibility and smooth collaboration between development and deployment teams.  
+I used MLflow as both an experiment tracker and a model registry to streamline my machine learning workflow. During experimentation, I log key parameters, metrics, artifacts, and model versions using MLflow Tracking, which helps me compare different runs and identify the most effective models. Once a model meets the desired performance criteria, I register it in the MLflow Model Registry, where I can manage model stages such as staging, production, and archived. This setup provides a structured, auditable process for tracking model lifecycle events, promoting reproducibility and smooth collaboration between development and deployment teams.  
   
  
 
 #### Workflow orchestration
 
-I use ZenML for workflow orchestration by designing modular, reproducible machine learning pipelines that integrate data ingestion, preprocessing, model training, evaluation, and deployment. ZenML allows me to structure these workflows as version-controlled pipelines, leveraging step caching and artifact tracking for efficiency and traceability. Its integration with orchestrators like Kubeflow or Airflow helps scale and automate pipeline runs across environments, ensuring consistent execution from local development to production deployment.
+I used ZenML for workflow orchestration by designing modular, reproducible machine learning pipelines that integrate data ingestion, preprocessing, model training, evaluation, and deployment. ZenML allows me to structure these workflows as version-controlled pipelines, leveraging step caching and artifact tracking for efficiency and traceability. Its integration with orchestrators like Kubeflow or Airflow helps scale and automate pipeline runs across environments, ensuring consistent execution from local development to production deployment. I logged the trin and test data as artifacts in ZenML where they could be viewed in the dashboard while the model, evidently report and model metrics were logged to MLFLOW.
 
 Data: Fictitious dataset containing features relevant to IT professionals' salaries (e.g., years of experience, job role, education).
 
